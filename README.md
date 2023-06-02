@@ -2,6 +2,11 @@
 
 Terraform module that cover different scenarios for Confluent Cloud Cluster Creation on AWS
 
+## TODO
+
+- Make environment creation optional if not provided data resource to get the id from config
+- Make byok and network modules optional
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
