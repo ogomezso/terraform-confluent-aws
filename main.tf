@@ -45,7 +45,7 @@ module "byok" {
   providers = {
     confluent = confluent.confluent_cloud
   }
-  source                     = "../terraform-confluent-aws-byok"
+  source                     = "github.com/ogomezso/terraform-confluent-aws-byok"
   aws_region                 = var.region
   aws_kms_key_alias          = var.aws_kms_key_alias
   aws_kms_key_description    = var.aws_kms_key_description
@@ -54,7 +54,7 @@ module "byok" {
 }
 
 module "cluster" {
-  source                     = "../terraform-confluent-kafka-cluster"
+  source                     = "mcolomerc/terraform-confluent-kafka-cluster?ref=feature/optional_config_options"
   environment                = module.environment.env.id
   cluster                    = var.confluent_cluster
   network                    = module.aws_confluent_network.transit_gateay_confluent_network.id
