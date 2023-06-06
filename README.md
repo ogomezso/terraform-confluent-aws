@@ -27,7 +27,7 @@ No providers.
 |------|--------|---------|
 | <a name="module_aws_confluent_network"></a> [aws\_confluent\_network](#module\_aws\_confluent\_network) | github.com/mcolomerc/terraform-confluent-aws-network | n/a |
 | <a name="module_byok"></a> [byok](#module\_byok) | github.com/ogomezso/terraform-confluent-aws-byok | n/a |
-| <a name="module_cluster"></a> [cluster](#module\_cluster) | mcolomerc/terraform-confluent-kafka-cluster | feature/optional_config_options |
+| <a name="module_cluster"></a> [cluster](#module\_cluster) | mcolomerc/terraform-confluent-kafka-cluster | n/a |
 | <a name="module_environment"></a> [environment](#module\_environment) | github.com/ogomezso/terraform-confluent-environment | n/a |
 
 ## Resources

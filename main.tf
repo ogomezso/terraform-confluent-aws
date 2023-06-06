@@ -54,7 +54,7 @@ module "byok" {
 }
 
 module "cluster" {
-  source                     = "mcolomerc/terraform-confluent-kafka-cluster?ref=feature/optional_config_options"
+  source                     = "mcolomerc/terraform-confluent-kafka-cluster"
   environment                = module.environment.env.id
   cluster                    = var.confluent_cluster
   network                    = module.aws_confluent_network.transit_gateay_confluent_network.id
